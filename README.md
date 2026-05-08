@@ -156,7 +156,7 @@ After (Simplified Flow):
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/school-management-system.git
+git clone https://github.com/Habiba-shah/school-management-system-SMS-.git
 cd school-management-system
 ```
 
