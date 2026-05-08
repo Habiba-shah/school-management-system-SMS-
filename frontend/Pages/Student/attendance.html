@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolMS - My Attendance</title>
+    <link rel="stylesheet" href="../../css/student/attendance.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.3NutcxKMKBdxY9JVw5NeugHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain&o=7&rm=3" alt="SchoolMS Logo" class="sidebar-logo">
+                <span class="sidebar-brand">SchoolMS</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H10V10H3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 3H21V10H14V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 14H21V21H14V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 14H10V21H3V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="attendance.html" class="nav-item active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <span>Attendance</span>
+                </a>
+                <a href="results.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/></svg>
+                    <span>Results</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar" style="background-color: #3b82f6;">J</div>
+                    <div class="user-info">
+                        <p class="user-name">John Smith</p>
+                        <p class="user-role">Student</p>
+                    </div>
+                </div>
+                <a href="#" class="sign-out">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Sign Out</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <!-- <h2 class="page-title">Attendance</h2> -->
+            </header>
+
+            <section class="attendance-section">
+                <div class="attendance-header">
+                    <h1 class="dashboard-title">My Attendance</h1>
+                    <p class="dashboard-subtitle">Your attendance record for the current session</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p class="stat-label">Overall Attendance</p>
+                            <h3 class="stat-value">92%</h3>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="stat-icon-wrapper">
+                            <svg class="stat-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5H9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p class="stat-label">Days Present</p>
+                            <h3 class="stat-value" style="color: #10b981;">94</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p class="stat-label">Days Absent</p>
+                            <h3 class="stat-value" style="color: #ef4444;">9</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="monthly-breakdown-card">
+                    <h3 class="section-title">Monthly Breakdown</h3>
+                    <div class="breakdown-list">
+                        <div class="breakdown-item">
+                            <span class="month-name">January</span>
+                            <div class="month-progress">
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            <span class="month-percent">92%</span>
+                            <span class="month-ratio ratio-blue">22/24</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="month-name">February</span>
+                            <div class="month-progress">
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <span class="month-percent">95%</span>
+                            <span class="month-ratio ratio-blue">19/20</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="month-name">March</span>
+                            <div class="month-progress">
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 82%; background-color: #10b981;"></div>
+                                </div>
+                            </div>
+                            <span class="month-percent">82%</span>
+                            <span class="month-ratio ratio-green">18/22</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="month-name">April</span>
+                            <div class="month-progress">
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <span class="month-percent">95%</span>
+                            <span class="month-ratio ratio-blue">20/21</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="month-name">May</span>
+                            <div class="month-progress">
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 94%;"></div>
+                                </div>
+                            </div>
+                            <span class="month-percent">94%</span>
+                            <span class="month-ratio ratio-blue">15/16</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../../js/student/attendance.js"></script>
+</body>
+</html>
